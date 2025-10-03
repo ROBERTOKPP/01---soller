@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  /* CORES */
+  --blueGray900: #0F172A;
+  --amber300:#FCD34D;
+  --amber900: #78350F;
+
+  /* FONTES */
+  --font-family: "Roboto", sans-serif;
+
+  --h1: 800 4.5rem/1.1 var(--font-family);
+  --body: 500 1.125rem/1.6 var(--font-family);
+  --button: 500 1rem/1.5 var(--font-family);
+
+
+
+}
+
+body{
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  & h1{
+    font: var(--h1);
+    color: var(--blueGray900);
+  }
+  & p{
+    font: var(--body);
+    color: var(--blueGray900);
+  }
+}
