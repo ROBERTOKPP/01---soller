@@ -2,14 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  zoom: 125%;
-
 & .sp-col {
   margin-top: 9rem;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
-  width: 150%;
+  gap: 4rem;
     & > :nth-child(1) p {
       margin-block: 1.5rem;
     }
@@ -24,4 +21,35 @@
       }
     }
   }
+}
+
+
+
+@media (width > 80rem) {
+  #section-primary {
+    zoom: 125%;
+}
+
+}
+
+
+@media (width < 62.5rem) {
+  #section-primary {
+  flex-direction: column-reverse;
+& .sp-col {
+  margin-top: 4rem;
+  text-align: center;
+  & > :nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+  & .sp-right{
+    & img{
+      padding-left: 3rem;
+      width: 100%;
+    }
+  }
+}
 }

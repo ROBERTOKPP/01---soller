@@ -1,15 +1,14 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-:root{
-
+:root {
   /* CORES */
-  --blueGray900: #0F172A;
-  --amber300:#FCD34D;
-  --amber900: #78350F;
+  --blueGray900: #0f172a;
+  --amber300: #fcd34d;
+  --amber900: #78350f;
 
   /* FONTES */
   --font-family: "Roboto", sans-serif;
@@ -17,20 +16,29 @@
   --h1: 800 4.5rem/1.1 var(--font-family);
   --body: 500 1.125rem/1.6 var(--font-family);
   --button: 500 1rem/1.5 var(--font-family);
-
-
-
 }
 
-body{
+body {
   font-family: var(--font-family);
   overflow-x: hidden;
-  & h1{
+  & h1 {
     font: var(--h1);
     color: var(--blueGray900);
   }
-  & p{
+  & p {
     font: var(--body);
     color: var(--blueGray900);
+  }
+}
+
+@media (width < 62.5rem) {
+  body {
+    & h1 {
+      font-size: 3.5rem;
+    }
+    & p {
+      font: var(--body);
+     
+    }
   }
 }
